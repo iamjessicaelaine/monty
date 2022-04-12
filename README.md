@@ -1,10 +1,10 @@
 # Project 0x19: C - Stacks, Queues - LIFO, FIFO
 The goal of this project is to create an interpreter for Monty ByteCodes files.l
 # About the Program
-*Getting Started:* After cloning the repositry your local machine, compile the
+**Getting Started:** After cloning the repositry your local machine, compile the
 program with the command `gcc *.c -o monty` and then you can call the program
-with the command `./monty` followed by the file containing the bytecode.
-*Usage:*`monty **file**`
+with the command `./monty` followed by the file containing the bytecode.\n
+**Usage:** `monty file`
 - where **file** is the path to the file containing Monty byte code
 The monty program runs the bytecodes line by line and stops if either:
 - it ececuted properly every line of the file
