@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 
 /**
  * main - interpreter for monty bytecode files
@@ -35,13 +36,16 @@ int main(int argc, char *argv[])
 		linechars = getline(&linebuffer, &linelen, openedfile);
 		line_number++;
 		opcode = strtok(linebuffer, " \t\r\n\v\f");
+		printf("opcode is: [%s] at line [%u]\n", opcode, line_number);
 		if (opcode != NULL)
 		{
 			value = strtok(NULL, " \t\r\n\v\f");
 			if (value != NULL)
 			{
 				valueint = atoi(value);
+				printf("int value is [%u]\n", valueint);
 			}
 		}
 	}
+	return (0);
 }
